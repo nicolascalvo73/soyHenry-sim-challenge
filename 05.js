@@ -15,15 +15,12 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
   
-  const consult = []
+    const result = []
 
-  if ( propiedad === `name` ) {
-    array.map(e => consult.push(e.name))
-  }if ( propiedad === `price` ) {
-    array.map(e => consult.push(e.price))
-  }
+    array.map( e => result.push(e[propiedad]))
 
-  return consult
+    return result
+  
 }
 
 // No modifiques nada debajo de esta linea //
